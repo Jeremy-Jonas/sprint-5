@@ -20,6 +20,21 @@ for (let num = 1; num <= 100; num = num + 1) {
     }
   }
 
-  //Exercise 3
+//Exercise 3
 
-  
+let size = 8;
+
+let chessBoard = "";
+
+for (let a = 0; a < size; a++) {
+  for (let b = 0; b < size; b++) {
+    if ((b + a) % 2 == 0) {
+      chessBoard += " ";
+    } else {
+      chessBoard += "#";
+    }
+  }
+  chessBoard += "\n";
+}
+
+console.log(chessBoard);
